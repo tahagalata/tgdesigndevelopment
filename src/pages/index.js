@@ -1,5 +1,11 @@
-import React from "react"
+import React, { Fragment } from "react"
+import '../main.scss'
+import Navbar from '../components/navbar/navbar'
 
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <Fragment>
+      <Navbar/>
+    </Fragment>
+  )
 }
