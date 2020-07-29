@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "tgdesigndevelopment",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Portfolio Website for Taha Galata",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -15,6 +15,9 @@
   },
   "dependencies": {
     "gatsby": "^2.23.12",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-sass": "^2.3.12",
+    "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
@@ -23,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/tahagalata/tgdesigndevelopment"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
