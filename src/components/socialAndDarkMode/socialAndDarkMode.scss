@@ -1,15 +1,23 @@
 .icons_layout {
-  display: inline-block;
-  margin: 90% 0 25px 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 0 25px 27px;
 }
 
 .social_group {
   display: flex;
-  
+  flex-direction: column;
+  margin-bottom: 49px;
 }
 
 .social , .darkmode_button {
-  width: 30px;
+  max-width: 30px;
+  cursor: pointer;
 }
 
+.test {
+  color: red;
+}
 

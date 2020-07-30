@@ -12,7 +12,7 @@ class socialAndDarkMode extends Component {
         <div className='social_group'>
           
           <div className='social'>
-            <img src={instagram} alt='instagram' />
+            <img className='test' src={instagram} alt='instagram' />
           </div>
 
           <div className='social'>

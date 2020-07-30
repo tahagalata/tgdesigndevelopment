@@ -2,12 +2,16 @@
   height: calc(100vh - 60px);
   width: 178px;
   background-color: rgba(0, 0, 0, 0.1);
-  position: absolute;
-  display: inline-block;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .brand_logo_div {
   width: 122px;
-  margin: 30px 25px 100px;
+  margin: 30px 25px 0px;
   position: static;
+  cursor: pointer;
 }
