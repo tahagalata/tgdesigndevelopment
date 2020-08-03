@@ -1,9 +1,12 @@
+@import './variables';
+
 body {
   margin: 0 auto;
   padding: 30px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  color: #232323;
+  color: $cloudy-black;
+  background-color: linear-gradient(97.8deg, #F2F2F2 12.57%, #FEFEFE 81.02%);
 }
 
 h1 {
@@ -30,6 +33,28 @@ p {
 
 img {
   width: 100%;  
+}
+
+button {
+  width: 162px;
+  height: 43px;
+  border-style: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 200%;
+  border-radius: 4px;
+}
+
+.primary-button {
+  background-color: $brand-color;
+  color: $cloudy-white;
+  border: 1.5px solid $brand-color;
+}
+
+.ghost-button {
+  background-color: transparent;
+  border: 1.5px solid $brand-color;
+  color: $brand-color;
 }
 
 .caption {
