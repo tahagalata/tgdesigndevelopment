@@ -19,13 +19,6 @@ class Hero extends Component {
             <h1>I'm Taha Galata</h1>
             <p className='hero-paragraph'>I am a web designer and web developer based in Çanakkale / Turkey. <span className='email-span'>Email me</span> if you think we should be working together on exciting projects.
             </p>
-            <div className='button-div'>
-              <button className='primary-button'>Get in Touch
-              </button>
-              
-              <button className='ghost-button'>See My Work
-              </button>
-            </div>
           </div>
           
           <div className='hero-photo'>

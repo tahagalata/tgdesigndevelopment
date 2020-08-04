@@ -2,3 +2,8 @@ $brand-color: #DE4848;
 $cloudy-white: #F2F2F2;
 $cloudy-black: #232323;
 $caption-red: rgba(247, 80, 80, 0.1);
+
+@mixin default-transition {
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}

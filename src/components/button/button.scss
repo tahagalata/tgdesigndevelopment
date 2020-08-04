@@ -1,0 +1,50 @@
+@import '../../variables';
+
+button {
+  width: 162px;
+  height: 43px;
+  border-style: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 200%;
+  border-radius: 4px;
+  cursor: pointer;
+  @include default-transition;
+  border: 1.5px solid $brand-color;
+
+  &:hover {
+    transform: translate(10px, 10px);
+  }
+}
+
+.primary-button {
+  background-color: $brand-color;
+  color: $cloudy-white;
+}
+
+.ghost-button {
+  background-color: #F5F5F5;
+  color: $brand-color;
+}
+
+.button-div {
+  display: flex;
+  justify-content: space-between;
+  max-width: 364px;
+  flex-wrap: wrap;
+}
+
+.primary-button-div, .ghost-button-div {
+  position: relative;
+}
+
+.button-shadow {
+  width: 162px;
+  height: 43px;
+  background-color: rgba(222, 72, 72, 0.15);
+  border-radius: 4px;
+  position: absolute;
+  margin-top: -33px;
+  margin-left: 10px;
+  z-index: -1;
+}

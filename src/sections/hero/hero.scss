@@ -17,13 +17,7 @@
 .hero-photo {
   max-width: 780px;
   filter: drop-shadow(0px 15px 50px rgba(0, 0, 0, 0.15));
-}
-
-.button-div {
-  display: flex;
-  justify-content: space-between;
-  max-width: 354px;
-  flex-wrap: wrap;
+  flex-shrink: 0;
 }
 
 .email-span {
