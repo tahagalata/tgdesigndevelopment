@@ -17,17 +17,24 @@ button {
   }
 }
 
-.primary {
+.primary-button {
   background-color: $brand-color;
   color: $cloudy-white;
 }
 
-.ghost {
+.ghost-button {
   background-color: #F5F5F5;
   color: $brand-color;
 }
 
 .button-div {
+  display: flex;
+  justify-content: space-between;
+  max-width: 364px;
+  flex-wrap: wrap;
+}
+
+.primary-button-div, .ghost-button-div {
   position: relative;
 }
 
