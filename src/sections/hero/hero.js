@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './hero.scss';
 import SectionWrapper from '../../components/sectionWrapper/sectionWrapper';
+import Button from '../../components/button/button';
 import heroPhoto from './herophoto.png'
 
 class Hero extends Component {
@@ -19,6 +20,11 @@ class Hero extends Component {
             <h1>I'm Taha Galata</h1>
             <p className='hero-paragraph'>I am a web designer and web developer based in Çanakkale / Turkey. <span className='email-span'>Email me</span> if you think we should be working together on exciting projects.
             </p>
+            
+            <div className='button-layout'>
+              <Button type='primary'>Get in Touch</Button>
+              <Button type='ghost'>See My Work</Button>
+            </div>
           </div>
           
           <div className='hero-photo'>

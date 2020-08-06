@@ -25,3 +25,10 @@
   height: 1.1em;
   border-bottom: 6px solid rgba(222, 72, 72, 0.2);;
 }
+
+.button-layout {
+  display: flex;
+  justify-content: space-between;
+  max-width: 364px;
+  flex-wrap: wrap;
+}

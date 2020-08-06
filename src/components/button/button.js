@@ -6,7 +6,7 @@ class CustomButton extends Component {
     return (
       <div className='button-div'>
         <button 
-          className={this.props.type}>
+          className={'.'+this.props.type}>
           {this.props.children}
         </button>
         <div className='button-shadow'/>
