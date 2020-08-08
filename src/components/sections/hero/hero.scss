@@ -1,13 +1,13 @@
-@import '../../../variables';
+@import 'src/variables';
 
 .hero {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   
 }
 
 .hero-content {
-  margin-top: 290px;
+  margin: 290px 0 350px;
 }
 
 .hero-paragraph {
@@ -17,7 +17,7 @@
 .hero-photo {
   max-width: 780px;
   filter: drop-shadow(0px 15px 50px rgba(0, 0, 0, 0.15));
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 .email-span {

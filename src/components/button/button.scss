@@ -1,9 +1,8 @@
-@import '../../variables';
+@import 'src/variables';
 
 button {
   width: 162px;
   height: 43px;
-  border-style: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 200%;
@@ -15,6 +14,7 @@ button {
   &:hover {
     transform: translate(10px, 10px);
   }
+  
 }
 
 .primary {

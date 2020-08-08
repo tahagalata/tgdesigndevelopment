@@ -1,0 +1,18 @@
+@import 'src/variables';
+
+.what-i-do-div {
+  padding: 80px 0px;
+  max-width: 75vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.heading {
+  margin-right: 100px;
+  margin-top: -10px;
+}
+
+.first-column {
+  margin-right: 100px;
+}

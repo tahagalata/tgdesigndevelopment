@@ -1,0 +1,28 @@
+@import 'src/variables';
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.at-div {
+  max-width: 531px;
+  position: relative;
+}
+
+.at-sign {
+  position: absolute;
+  z-index: -1;
+}
+
+.at-heading {
+  padding-top: 160px;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 122.5%;
+}
+
+.content {
+  max-width: 530px;
+  margin: 130px 0 0 150px;
+}
