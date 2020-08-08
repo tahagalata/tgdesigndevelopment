@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './hero.scss';
 import SectionWrapper from '../sectionWrapper/sectionWrapper';
-import Button from '../../components/button/button';
+import Button from '../../button/button';
 import heroPhoto from './herophoto.png'
 
 class Hero extends Component {
