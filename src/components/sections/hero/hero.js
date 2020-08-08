@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './hero.scss';
-import SectionWrapper from '../../components/sectionWrapper/sectionWrapper';
+import SectionWrapper from '../sectionWrapper/sectionWrapper';
 import Button from '../../components/button/button';
 import heroPhoto from './herophoto.png'
 

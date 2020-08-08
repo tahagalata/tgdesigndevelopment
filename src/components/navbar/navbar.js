@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './navbar.scss'
 import brandLogo from './assets/brand.svg'
-import NavbarLinks from '../navbarLinks/navbarLinks'
-import SocialAndDarkMode from '../socialAndDarkMode/socialAndDarkMode'
+import NavbarLinks from './navbarLinks/navbarLinks'
+import SocialAndDarkMode from './socialAndDarkMode/socialAndDarkMode'
 
 class Navbar extends Component {
   render() {
