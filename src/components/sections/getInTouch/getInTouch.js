@@ -17,8 +17,8 @@ class GetInTouch extends Component {
           </div>
 
           <div className='content'>
-            <p>
-              If you need a modern and powerful website for your business, startup or yourself, I am available for work. You can email me directly at taha9alata@gmail.com.
+            <p className='content-paragraph'>
+              If you need a modern and powerful website for your business, startup or yourself, I am available for work. You can email me directly at <span>taha9alata@gmail.com</span>.
             </p>
             <Button type='primary'>Get in Touch</Button>
           </div>
