@@ -3,6 +3,7 @@ import '../main.scss'
 import Navbar from '../components/navbar/navbar'
 import Hero from '../components/sections/hero/hero'
 import WhatIDo from '../components/sections/whatido/whatido'
+import MyWork from '../components/sections/mywork/mywork'
 import GetInTouch from '../components/sections/getInTouch/getInTouch'
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <WhatIDo/>
+      <MyWork/>
       <GetInTouch/>
     </Fragment>
   )
