@@ -8,7 +8,7 @@ class Hero extends Component {
   render() {
     return (
       <SectionWrapper>
-        <div className='hero'>
+        <div className='hero' id='hero-section'>
   
           <div classsName='corner-lines'>
             <div className='vertical-line'></div>

@@ -3,12 +3,52 @@
 .work {
   display: flex;
   justify-content: space-between;
+  padding-right: 100px;
+  margin-bottom: 150px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
 
 .work-content {
-  
+  margin-top: 48px;
+  max-width: 650px;
+}
+
+.tag-container {
+  display: flex;
+  margin: 10px 0 20px 0;  
+}
+
+.work-paragraph {
+  margin-bottom: 35px;
 }
 
 .work-photo {
-  
+  width: 35%;
+  position: relative;
+}
+
+.dots {
+  position: relative;
+  z-index: -3;
+}
+
+.upper-photo, .lower-photo {
+  width: 325px;
+  height: 405px;
+  position: absolute;
+}
+
+.upper-photo {
+  z-index: -1;
+  bottom: 55px;
+  left: 48px;
+}
+
+.lower-photo {
+  z-index: -2;
+  top: -48px;
+  right: 48px;
 }
