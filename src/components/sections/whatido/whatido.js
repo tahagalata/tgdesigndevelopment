@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './whatido.scss';
 import SectionWrapper from '../sectionWrapper/sectionWrapper';
-import ServiceDiv from './service-div/service-div'
 
 class WhatIDo extends Component {
   render() {
