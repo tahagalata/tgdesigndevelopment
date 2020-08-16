@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 import './getInTouch.scss';
-import SectionWrapper from '../sectionWrapper/sectionWrapper';
 import atsign from './@.svg';
 import Button from '../../button/button'
 
 class GetInTouch extends Component {
   render() {
     return (
-      <SectionWrapper>
-        <div className='container' id='getintouch'>
+      <section className='get-in-touch section' id='getintouch'>
+        <div className='main-container'>
           <div className='at-div'>
             <div className='at-sign'>
               <img src={atsign} alt='@ sign'/>
@@ -18,15 +17,19 @@ class GetInTouch extends Component {
 
           <div className='content'>
             <p className='content-paragraph'>
-              If you need a modern and powerful website for your business, startup or yourself, I am available for work. You can email me directly at <span>taha9alata@gmail.com</span>.
+              If you need a modern and powerful website for your business, startup or yourself, I am available for work. You can email me directly at <span>
+                <a href='mailto: taha9alata@gmail.com' 
+                target='_blank' 
+                rel='noreferrer'
+                >taha9alata@gmail.com</a>
+              </span>.
             </p>
-            <Button type='primary'>Get in Touch</Button>
+            <Button>Get in Touch</Button>
           </div>
-          
-          <p>© Copyright -Taha Galata</p>
         </div>
-        
-      </SectionWrapper>
+
+        <p>© Copyright -Taha Galata</p>
+      </section>
     )
   }
 }

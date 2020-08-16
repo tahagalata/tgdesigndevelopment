@@ -17,4 +17,12 @@
     border-left: 15px solid rgba($color: #000000, $alpha: 0.3);
     
   }
+
+  &, &:hover, &:visited, &:active {
+    color: $cloudy-black;
+  }
+
+  &:active {
+    border-left: 15px solid $brand-color;
+  }
 }

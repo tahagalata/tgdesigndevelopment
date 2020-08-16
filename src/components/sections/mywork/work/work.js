@@ -17,7 +17,7 @@ class Work extends Component {
           <p className='work-paragraph'>
             {this.props.children}
           </p>
-          <Button type='primary'>See This Project</Button>
+          <Button>See This Project</Button>
         </div>
         <div className='work-photo'>
           <div className='dots'>

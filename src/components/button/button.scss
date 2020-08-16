@@ -1,15 +1,18 @@
 @import 'src/variables';
 
-button {
-  width: 162px;
-  height: 43px;
+.button {
+  display: inline-block;
+  padding: 6px 25px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 200%;
   border-radius: 4px;
   cursor: pointer;
   @include default-transition;
-  border: 1.5px solid $brand-color;
+
+  &, &:hover, &:visited, &:active {
+    border: 1.5px solid $brand-color;
+    outline: none;
+  }
 
   &:hover {
     transform: translate(10px, 10px);
@@ -19,12 +22,18 @@ button {
 
 .primary {
   background-color: $brand-color;
-  color: $cloudy-white;
+
+    &, &:hover, &:visited, &:active {
+      color: $cloudy-white;
+    }
 }
 
 .ghost {
   background-color: #F5F5F5;
-  color: $brand-color;
+
+  &, &:hover, &:visited, &:active {
+    color: $brand-color;
+  }
 }
 
 .button-div {
@@ -32,12 +41,15 @@ button {
 }
 
 .button-shadow {
-  width: 162px;
-  height: 43px;
+  padding: 7.5px 26.5px;
+  font-weight: 500;
+  font-size: 16px;
   background-color: rgba(222, 72, 72, 0.15);
+  color: transparent;
   border-radius: 4px;
   position: absolute;
-  margin-top: -33px;
-  margin-left: 10px;
   z-index: -1;
+  bottom: -10px;
+  left: 10px;
+  white-space: nowrap;
 }

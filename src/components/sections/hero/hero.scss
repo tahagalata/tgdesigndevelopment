@@ -1,9 +1,10 @@
 @import 'src/variables';
 
 .hero {
+  padding-top: 30px;
   display: flex;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .hero-content {
@@ -25,4 +26,10 @@
   justify-content: space-between;
   max-width: 364px;
   flex-wrap: wrap;
+}
+
+a {
+  &, &:hover, &:visited, &:active {
+    color: rgba(0, 0, 0, 0.6);
+  }
 }

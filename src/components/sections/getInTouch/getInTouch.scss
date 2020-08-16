@@ -1,9 +1,14 @@
 @import 'src/variables';
 
-.container {
+.get-in-touch {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 200px;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  margin-bottom: 50px;
 }
 
 .at-div {
@@ -17,10 +22,9 @@
 }
 
 .at-heading {
-  padding-top: 160px;
+  padding: 160px 0;
   font-weight: 600;
   font-size: 60px;
-  line-height: 122.5%;
 }
 
 .content {
@@ -30,4 +34,10 @@
 
 .content-paragraph {
   margin-bottom: 30px;
+}
+
+a {
+  &, &:hover, &:visited, &:active {
+    color: rgba(0, 0, 0, 0.6);
+  }
 }
