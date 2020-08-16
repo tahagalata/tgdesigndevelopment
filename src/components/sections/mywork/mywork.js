@@ -7,7 +7,7 @@ class MyWork extends Component {
   render() {
     return (
       <SectionWrapper>
-        <div className='mywork' id='mywork-section'>
+        <div className='mywork' id='mywork'>
           <Work 
           spec='Latest Work' 
           title='Team App Website'

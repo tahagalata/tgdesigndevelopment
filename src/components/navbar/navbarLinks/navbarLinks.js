@@ -1,15 +1,18 @@
 import React, {Component} from 'react';
 import './navbarLinks.scss'
+import {Link} from 'gatsby';
 
 class NavbarLinks extends Component {
   render() {
     return (
       <div className='link_layout'>
-        <div className='link'>HOME</div>
-        <div className='link'>WHAT I DO</div>
-        <div className='link'>MY WORK </div>
-        <div className='link'>GET IN TOUCH</div>
+          <Link className='link' to='#home'>HOME</Link>
 
+          <Link className='link' to='#whatido'>WHAT I DO</Link>
+
+          <Link className='link' to='#mywork'>MY WORK </Link>
+
+          <Link className='link' to='#getintouch'>GET IN TOUCH</Link>
       </div>
     )
   }

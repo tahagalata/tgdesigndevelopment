@@ -7,7 +7,7 @@ class WhatIDo extends Component {
   render() {
     return (
       <SectionWrapper>
-        <div className='what-i-do-div' id='what-i-do-section'>
+        <div className='what-i-do-div' id='whatido'>
           <h1 className='heading'>What I Do</h1>
           <div className='services-div'>
             <ServiceDiv type='design' heading='Design'>

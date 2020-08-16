@@ -7,6 +7,11 @@ import MyWork from '../components/sections/mywork/mywork'
 import GetInTouch from '../components/sections/getInTouch/getInTouch'
 
 export default function Home() {
+  if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]')
+  }
+
   return (
     <Fragment>
       <Navbar/>

@@ -8,7 +8,7 @@ class GetInTouch extends Component {
   render() {
     return (
       <SectionWrapper>
-        <div className='container' id='get-in-touch-section'>
+        <div className='container' id='getintouch'>
           <div className='at-div'>
             <div className='at-sign'>
               <img src={atsign} alt='@ sign'/>
