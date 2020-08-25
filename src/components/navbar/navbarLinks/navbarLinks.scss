@@ -1,5 +1,13 @@
 @import 'src/variables';
 
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
 .link {
   display: block;
   cursor: pointer;
@@ -22,7 +30,7 @@
     color: $cloudy-black;
   }
 
-  &:active {
+  &.active{
     border-left: 15px solid $brand-color;
   }
 }

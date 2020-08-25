@@ -13,7 +13,7 @@ class Navbar extends Component {
           <img src= {brandLogo} alt='brand logo' />
         </div>
 
-        <NavbarLinks/>
+        <NavbarLinks activeSection={this.props.activeSection}/>
         <SocialAndDarkMode/>
         
       </nav>

@@ -2,20 +2,24 @@ import React, {Component} from 'react';
 import './navbarLinks.scss'
 import {Link} from 'gatsby';
 
-class NavbarLinks extends Component {
+export default class NavbarLinks extends Component {
   render() {
+    const section = this.props.activeSection;
+
     return (
       <div className='link_layout'>
-          <Link className='link' to='#home'>HOME</Link>
+        <ul>
+          
+          <li><Link className={section === 'hero' ? 'link active' : 'link'} to='#home'>HOME</Link></li>
 
-          <Link className='link' to='#whatido'>WHAT I DO</Link>
+          <li><Link className={section === 'whatido' ? 'link active' : 'link'} to='#whatido'>WHAT I DO</Link></li>
 
-          <Link className='link' to='#mywork'>MY WORK </Link>
+          <li><Link className={section === 'mywork' ? 'link active' : 'link'} to='#mywork'>MY WORK </Link></li>
 
-          <Link className='link' to='#getintouch'>GET IN TOUCH</Link>
+          <li><Link className={section === 'getintouch' ? 'link active' : 'link'} to='#getintouch'>GET IN TOUCH</Link></li>
+
+        </ul>
       </div>
     )
   }
 }
-
-export default NavbarLinks;
