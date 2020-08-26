@@ -7,11 +7,6 @@ class Hero extends Component {
   render() {
     return (
       <section className='hero section' id='home'>
-
-        <div classsName='corner-lines'>
-          <div className='vertical-line'></div>
-          <div className='horizantal-line'></div>
-        </div>
         
         <div className='hero-content'>
           <h1>Hello</h1>

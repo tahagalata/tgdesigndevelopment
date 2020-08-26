@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'gatsby';
 import './navbar.scss'
 import brandLogo from './assets/brand.svg'
 import NavbarLinks from './navbarLinks/navbarLinks'
@@ -9,9 +10,9 @@ class Navbar extends Component {
     return (
       <nav className='navbar'>
         
-        <div className='brand_logo_div'>
+        <Link className='brand_logo_div' to='#home'>
           <img src= {brandLogo} alt='brand logo' />
-        </div>
+        </Link>
 
         <NavbarLinks activeSection={this.props.activeSection}/>
         <SocialAndDarkMode/>

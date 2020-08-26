@@ -12,7 +12,7 @@ class Work extends Component {
           <h3>{(this.props.spec).toUpperCase()}</h3>
           <h2>{this.props.title}</h2>
           <div className='tag-container'>
-            {this.props.tags.map(tag => <Tag>{tag}</Tag>)}
+            {this.props.tags.map(tag => <Tag key ={tag}>{tag}</Tag>)}
           </div>
           <p className='work-paragraph'>
             {this.props.children}

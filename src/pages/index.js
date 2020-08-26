@@ -20,7 +20,6 @@ export default class Home extends Component {
       this.setState({
         visibleSection: section
       });
-      console.log(section);
     }
   }
 
@@ -35,27 +34,31 @@ export default class Home extends Component {
         <VisibilitySensor
         onChange={(isVisible) => this.onSectionChange(isVisible,'hero')}
         partialVisibility= {true}
+        offset={{top:400, bottom:400}}
         >
           <Hero/>
         </VisibilitySensor>
 
         <VisibilitySensor
-        onChange={(isVisible) => this.onSectionChange(isVisible,'whatido')}
-        partialVisibility= {true}
-        >
-          <WhatIDo/>
-        </VisibilitySensor>
-
-        <VisibilitySensor
         onChange={(isVisible) => this.onSectionChange(isVisible,'mywork')}
         partialVisibility= {true}
+        offset={{top:400, bottom:400}}
         >
           <MyWork/>
         </VisibilitySensor>
 
         <VisibilitySensor
+        onChange={(isVisible) => this.onSectionChange(isVisible,'whatido')}
+        partialVisibility= {true}
+        offset={{top:400, bottom:400}}
+        >
+          <WhatIDo/>
+        </VisibilitySensor>
+
+        <VisibilitySensor
         onChange={(isVisible) => this.onSectionChange(isVisible,'getintouch')}
         partialVisibility= {true}
+        offset={{top:400, bottom:400}}
         >
           <GetInTouch/>
         </VisibilitySensor>
