@@ -64,6 +64,7 @@ span {
 .section {
   width: calc(100vw - 340px);
   margin: 0 0 0 280px ;
+  overflow: hidden;
 }
 
 a {

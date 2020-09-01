@@ -1,13 +1,13 @@
 .navbar {
   height: calc(100vh - 60px);
-  margin-top: 30px;
+  top: 30px;
+  left: 30px;
   width: 178px;
   background-color: rgba(0, 0, 0, 0.1);
   position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
 .brand_logo_div {
