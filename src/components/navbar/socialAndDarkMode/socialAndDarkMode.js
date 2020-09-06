@@ -3,7 +3,7 @@ import './socialAndDarkMode.scss'
 import instagram from './assets/instagram.svg'
 import facebook from './assets/facebook.svg'
 import linkedin from './assets/linkedin.svg'
-import darkmode from './assets/darkmode.svg'
+// import darkmode from './assets/darkmode.svg'
 
 class socialAndDarkMode extends Component {
   render() {
@@ -25,9 +25,9 @@ class socialAndDarkMode extends Component {
 
         </div>
 
-        <div className='darkmode_button'>
+        {/* <div className='darkmode_button'>
           <img src={darkmode} alt='dark mode button' />
-        </div>
+        </div> */}
       </div>
       
     )
