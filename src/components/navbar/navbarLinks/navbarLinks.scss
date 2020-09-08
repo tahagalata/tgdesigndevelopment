@@ -21,6 +21,10 @@ ul {
 
   @include default-transition;
 
+  @include navbarRespond() {
+   padding-left: 25px; 
+  }
+
   &:hover {
     border-left: 15px solid rgba($color: #000000, $alpha: 0.3);
     

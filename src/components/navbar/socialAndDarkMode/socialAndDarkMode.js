@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
-import './socialAndDarkMode.scss'
-import instagram from './assets/instagram.svg'
-import facebook from './assets/facebook.svg'
-import linkedin from './assets/linkedin.svg'
-// import darkmode from './assets/darkmode.svg'
+import './socialAndDarkMode.scss';
+import instagram from './assets/instagram.svg';
+import facebook from './assets/facebook.svg';
+import linkedin from './assets/linkedin.svg';
+import github from './assets/github.svg';
+// import dribbble from './assets/dribbble.svg';
+// import darkmode from './assets/darkmode.svg';
 
 class socialAndDarkMode extends Component {
   render() {
     return (
-      <div className='icons_layout'>
-        <div className='social_group'>
+      <div className='icons-layout'>
+        <div className='social-group'>
           
           <div className='social'>
             <img className='test' src={instagram} alt='instagram' />
@@ -22,6 +24,14 @@ class socialAndDarkMode extends Component {
           <div className='social'>
             <img src={linkedin} alt='linkedin' />
           </div>
+
+          <div className='social'>
+            <img src={github} alt='github' />
+          </div>
+
+          {/* <div className='social'>
+            <img src={dribbble} alt='dribbble' />
+          </div> */}
 
         </div>
 

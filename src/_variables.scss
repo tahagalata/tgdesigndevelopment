@@ -11,32 +11,38 @@ $caption-red: rgba(247, 80, 80, 0.1);
 @mixin respond($breakpoint) {
   // Phone-xs
   @if $breakpoint == phone-xs {
-    @media (max-width: 20em) {
+    @media (max-width: 320px) {
       @content;
-    } //0 - 320px
+    }
   }
   // Phone
   @if $breakpoint == phone {
-    @media (max-width: 37.5em) {
+    @media (max-width: 600px) {
       @content;
-    } //0 - 600px
+    }
   }
   // Table Portrait
   @if $breakpoint == tab-port {
-    @media (max-width: 56.25em) {
+    @media (max-width: 900px) {
       @content;
-    } //900px
+    }
   }
   // Table Landscape
   @if $breakpoint == tab-land {
-    @media (max-width: 75em) {
+    @media (max-width: 1200px) {
       @content;
-    } //1200px
+    }
   }
   // Big Desktop
   @if $breakpoint == big-desktop {
-    @media (min-width: 112.5em) {
+    @media (min-width: 1800px) {
       @content;
-    } //1800px +
+    }
+  }
+}
+
+@mixin navbarRespond () {
+  @media screen and (max-height: 730px) , (max-width: 730px) {
+    @content;
   }
 }

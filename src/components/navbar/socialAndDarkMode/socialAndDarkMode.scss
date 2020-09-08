@@ -1,4 +1,6 @@
-.icons_layout {
+@import 'src/variables';
+
+.icons-layout {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6,15 +8,24 @@
   margin: 0 25px 0 27px;
 }
 
-.social_group {
+.social-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 49px;
+  margin-bottom: 15px;
+
+  @include navbarRespond() {
+    flex-direction: row;
+  }
 }
 
-.social , .darkmode_button {
+.social , .darkmode-button {
   max-width: 30px;
   cursor: pointer;
+
+  @include navbarRespond() {
+    padding: 10px;
+    margin-right: 5px;
+  }
 }
 
 .test {

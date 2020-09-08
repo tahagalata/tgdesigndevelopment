@@ -1,18 +1,20 @@
+@import 'src/variables';
+
 .navbar {
   height: calc(100vh - 60px);
   top: 30px;
   left: 30px;
   width: 178px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #d9d9d9;
   position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
 
-.brand_logo_div {
-  width: 122px;
-  margin: 30px 25px 0px;
-  position: static;
-  cursor: pointer;
+  @include navbarRespond() {
+    z-index: 5;
+    width: calc(100vw - 60px);
+    height: auto;
+  }
+  
 }
