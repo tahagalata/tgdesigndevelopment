@@ -21,7 +21,7 @@ ul {
 
   @include default-transition;
 
-  @include navbarRespond() {
+  @include respond(phone) {
    padding-left: 25px; 
   }
 

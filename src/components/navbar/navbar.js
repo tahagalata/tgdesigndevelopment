@@ -9,7 +9,7 @@ class Navbar extends Component {
     return (
       <nav className='navbar'>
         
-        <BrandLogo />
+        <BrandLogo screen='big'/>
 
         <NavbarLinks activeSection={this.props.activeSection}/>
         <SocialAndDarkMode/>

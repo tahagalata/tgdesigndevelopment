@@ -13,7 +13,7 @@
   flex-direction: column;
   margin-bottom: 15px;
 
-  @include navbarRespond() {
+  @include respond(phone) {
     flex-direction: row;
   }
 }
@@ -22,13 +22,8 @@
   max-width: 30px;
   cursor: pointer;
 
-  @include navbarRespond() {
+  @include respond(phone) {
     padding: 10px;
     margin-right: 5px;
   }
 }
-
-.test {
-  color: red;
-}
-

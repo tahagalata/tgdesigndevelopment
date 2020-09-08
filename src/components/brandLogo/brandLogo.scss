@@ -3,11 +3,12 @@
 .brand-logo-div {
   width: 122px;
   margin: 30px 25px 0px;
-  position: static;
   cursor: pointer;
 
-  @include navbarRespond() {
-    display: none;
+  @include respond(phone) {
+    width: auto;
+    margin: 0;
+    padding-top: 20px;
   }
 }
 
@@ -19,8 +20,11 @@
   letter-spacing: -0.075em;
   color: black;
   margin-bottom: 15px;
-}
 
+  @include respond(phone) {
+    font-size: 40px;
+  }
+}
 .dot-in-brand {
   color: $brand-color;
   border-bottom: none;
@@ -32,9 +36,19 @@
   font-size: 18px;
   line-height: 22px;
   color: black;
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .and-sign {
   color: rgba(0, 0, 0, 0.5);
   border-bottom: none;
+}
+
+.big {
+  @include respond(phone) {
+    display: none;
+  }
 }
