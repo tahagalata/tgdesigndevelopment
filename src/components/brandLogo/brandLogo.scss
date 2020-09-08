@@ -1,0 +1,40 @@
+@import 'src/variables';
+
+.brand-logo-div {
+  width: 122px;
+  margin: 30px 25px 0px;
+  position: static;
+  cursor: pointer;
+
+  @include navbarRespond() {
+    display: none;
+  }
+}
+
+.brand-logo {
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: -0.075em;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.dot-in-brand {
+  color: $brand-color;
+  border-bottom: none;
+}
+
+.brand-text {
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: black;
+}
+
+.and-sign {
+  color: rgba(0, 0, 0, 0.5);
+  border-bottom: none;
+}
