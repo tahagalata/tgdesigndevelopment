@@ -12,17 +12,30 @@ export default class Header extends Component {
     }
   }
 
-  visibilityToggle() {
-    this.setState({navbarVisible: !this.state.navbarVisible})
+  visibilityToggle = () => {
+    this.setState(prevState => ({navbarVisible: !prevState.navbarVisible}))
+  }
+
+  handleScreenSize = () => {
+    this.setState(window.innerWidth > 730 ? {navbarVisible: true} : {navbarVisible:false})
+  }
+
+  componentDidMount() {
+    this.handleScreenSize()
+    window.addEventListener('resize', this.handleScreenSize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleScreenSize);
   }
 
   render() {
-     return (
+    return (
       <header>
         <div className='top-menu'>
           <BrandLogo screen='small'/>
           <button className='menu-button'
-          onClick={this.visibilityToggle.bind(this)}>
+          onClick={this.visibilityToggle}>
             <img src={HamburgerMenuIcon} alt='menu'></img>
           </button>
         </div>
