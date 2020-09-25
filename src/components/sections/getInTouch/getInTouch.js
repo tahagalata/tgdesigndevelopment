@@ -27,8 +27,6 @@ class GetInTouch extends Component {
             <Button>Get in Touch</Button>
           </div>
         </div>
-
-        <p>© Copyright -Taha Galata</p>
       </section>
     )
   }

@@ -63,8 +63,12 @@ span {
 
 .section {
   width: calc(100vw - 340px);
-  margin: 0 0 0 280px ;
+  margin-left: 280px;
   overflow: hidden;
+
+  @include respond(tab-port) {
+    margin-left: 230px;
+  }
 }
 
 a {

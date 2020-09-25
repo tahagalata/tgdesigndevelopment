@@ -5,7 +5,7 @@
   margin: 30px 25px 0px;
   cursor: pointer;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     width: auto;
     margin: 0;
     padding-top: 20px;
@@ -21,7 +21,7 @@
   color: black;
   margin-bottom: 15px;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     font-size: 40px;
   }
 }
@@ -37,7 +37,7 @@
   line-height: 22px;
   color: black;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     display: none;
   }
 }
@@ -48,7 +48,7 @@
 }
 
 .big {
-  @include respond(phone) {
+  @include respond(tab-port) {
     display: none;
   }
 }

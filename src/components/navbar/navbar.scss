@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     z-index: 5;
     width: calc(100vw - 60px);
     height: auto;

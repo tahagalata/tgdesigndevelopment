@@ -5,10 +5,23 @@
   display: flex;
   align-items: center;
   position: relative;
+  min-height: calc(100vh - 60px);
+
+  @include respond(tab-land) {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 .hero-content {
-  margin: 290px 0 350px;
+  @include respond(tab-land) {
+    margin: 0 100px 30px 0;
+  }
+
+  @include respond(tab-port) {
+    margin-right: 50px;
+  }
 }
 
 .hero-paragraph {
@@ -18,8 +31,14 @@
 .hero-photo {
   max-width: 650px;
   min-width: 400px;
-  filter: drop-shadow(0px 15px 50px rgba(0, 0, 0, 0.15));
-  margin-right: 50px;
+  // filter: drop-shadow(0px 15px 50px rgba(0, 0, 0, 0.15));
+  margin: 0 50px 0 30px;
+
+  @include respond(tab-land) {
+    margin: 0 0 30px 0px;
+    width: 20vw;
+  }
+
 }
 
 .button-layout {

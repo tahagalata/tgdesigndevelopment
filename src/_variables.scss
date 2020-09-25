@@ -17,7 +17,7 @@ $caption-red: rgba(247, 80, 80, 0.1);
   }
   // Phone
   @if $breakpoint == phone {
-    @media (max-width: 730px) {
+    @media (max-width: 600px) {
       @content;
     }
   }

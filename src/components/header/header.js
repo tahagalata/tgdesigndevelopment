@@ -17,7 +17,7 @@ export default class Header extends Component {
   }
 
   handleScreenSize = () => {
-    this.setState(window.innerWidth > 730 ? {navbarVisible: true} : {navbarVisible:false})
+    this.setState(window.innerWidth > 900 ? {navbarVisible: true} : {navbarVisible:false})
   }
 
   componentDidMount() {
