@@ -16,6 +16,11 @@ h1 {
   line-height: 125.5%;
   font-size: 48px;
   margin: 0;
+
+  @include respond(phone) {
+    line-height: 110%;
+    font-size: 40px;
+  }
 }
 
 h2 {
@@ -39,6 +44,7 @@ p {
   line-height: 32px;
   color: rgba(0, 0, 0, 0.6);
   margin: 0;
+
 }
 
 img {
@@ -67,7 +73,9 @@ span {
   overflow: hidden;
 
   @include respond(tab-port) {
-    margin-left: 230px;
+    margin: 0 30px 0 30px;
+    width: auto;
+    
   }
 }
 

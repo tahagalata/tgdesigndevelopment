@@ -21,7 +21,7 @@ ul {
 
   @include default-transition;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
    padding-left: 25px; 
   }
 

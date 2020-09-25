@@ -13,7 +13,7 @@
   flex-direction: column;
   margin-bottom: 15px;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     flex-direction: row;
   }
 }
@@ -22,7 +22,7 @@
   max-width: 30px;
   cursor: pointer;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     padding: 10px;
     margin-right: 5px;
   }
