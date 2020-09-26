@@ -28,6 +28,10 @@ h2 {
   font-size: 40px;
   line-height: 122.5%;
   margin: 0;
+
+  @include respond(phone) {
+    font-size: 32px;
+  }
 }
 
 h3 {
@@ -44,6 +48,11 @@ p {
   line-height: 32px;
   color: rgba(0, 0, 0, 0.6);
   margin: 0;
+
+  @include respond(phone) {
+    font-size: 16px;
+    line-height: 30px;
+  }
 
 }
 
