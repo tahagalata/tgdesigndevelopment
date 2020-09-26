@@ -9,31 +9,31 @@ $caption-red: rgba(247, 80, 80, 0.1);
 }
 
 @mixin respond($breakpoint) {
-  // Phone-xs
+
   @if $breakpoint == phone-xs {
-    @media (max-width: 320px) {
+    @media (max-width: 450px) {
       @content;
     }
   }
-  // Phone
+
   @if $breakpoint == phone {
     @media (max-width: 600px) {
       @content;
     }
   }
-  // Table Portrait
+
   @if $breakpoint == tab-port {
     @media (max-width: 900px) {
       @content;
     }
   }
-  // Table Landscape
+
   @if $breakpoint == tab-land {
     @media (max-width: 1200px) {
       @content;
     }
   }
-  // Big Desktop
+
   @if $breakpoint == big-desktop {
     @media (min-width: 1800px) {
       @content;
