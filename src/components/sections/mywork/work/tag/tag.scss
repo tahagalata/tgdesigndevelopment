@@ -1,14 +1,11 @@
 @import 'src/variables';
 
 .tag-div {
-  margin: 10px 10px 10px 0px;
-  padding: 0 13px;
-  height: 25px;
-  width: fit-content;
+  margin: 10px 10px 2px 0px;
+  padding: 2px 13px;
   background-color: $caption-red;
   color: rgba(0, 0, 0, 0.6);
   font-size: 13px;
-  line-height: 25px;
   text-align: center;
-  vertical-align: middle;
+  flex-shrink: 0;
 }

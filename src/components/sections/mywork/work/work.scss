@@ -3,12 +3,22 @@
 .work {
   display: flex;
   justify-content: space-between;
-  padding-right: 100px;
+  margin-right: 5.26vw;
   margin-bottom: 150px;
+  align-items: center;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .reverse {
   flex-direction: row-reverse;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
 }
 
 .work-content {
@@ -18,37 +28,47 @@
 
 .tag-container {
   display: flex;
-  margin: 10px 0 20px 0;  
+  margin: 10px 0 28px 0;
+  flex-wrap: wrap;
 }
 
 .work-paragraph {
   margin-bottom: 35px;
 }
 
-.work-photo {
-  width: 35%;
-  position: relative;
+.photo, .reverse-photo {
+  max-width: 550px;
+  min-width: 450px;
+
+  @include respond(tab-land) {
+    margin-top: 50px;
+  }
+
+  @include respond(phone) {
+    min-width: 200px;
+    width: 70vw;
+  }
 }
 
-.dots {
-  position: relative;
-  z-index: -3;
+.photo {
+  margin-left: 75px;
+
+  @include respond(tab-land) {
+    margin-left: 0;
+    margin-right: 75px;
+  }
+
+  @include respond(phone) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-.upper-photo, .lower-photo {
-  width: 325px;
-  height: 405px;
-  position: absolute;
-}
+.reverse-photo {
+  margin-right: 75px;
 
-.upper-photo {
-  z-index: -1;
-  bottom: 55px;
-  left: 48px;
-}
-
-.lower-photo {
-  z-index: -2;
-  top: -48px;
-  right: 48px;
+  @include respond(phone) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
