@@ -5,24 +5,39 @@
   padding: 75px 50px 0 0;
   display: flex;
   justify-content: flex-start;
- 
-  @media (max-width: 1675px) {
+
+  @media (max-width: 1400px) {
     flex-direction: column;
+  }
+
+  @include respond(phone) {
+    padding-right: 30px;
+  }
+
+  @include respond(phone-xs) {
+    padding-right: 0;
   }
 }
 
 .heading {
-  margin-right: 150px;
+  margin-right: 100px;
   margin-top: -10px;
   margin-bottom: 50px;
   flex-shrink: 0;
+
+  @include respond (phone-xs) {
+    margin-right: 0;
+  }
 }
 
 .services-div {
   margin-right: 50px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  width: 80vw;
+
+  @media (max-width: 1100px) {
+    flex-wrap: wrap;
+  }
 }
