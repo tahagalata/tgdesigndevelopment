@@ -3,33 +3,49 @@
 .get-in-touch {
   display: flex;
   justify-content: flex-start;
-  flex-direction: column;
-}
-
-.main-container {
-  display: flex;
   margin-bottom: 50px;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
 }
 
 .at-div {
-  max-width: 531px;
+  display: flex;
+  flex-shrink: 0;
   position: relative;
+  height: 315px;
+
+  // @include respond(phone-xs) {
+  //   height: 200px;
+  // }
 }
 
 .at-sign {
   position: absolute;
   z-index: -1;
+
+  @include respond(tab-land) {
+    opacity: 35%;
+  }
+
+  @include respond(phone) {
+    opacity: 20%;
+  }
 }
 
 .at-heading {
-  padding: 160px 0;
+  padding: 125px 0;
   font-weight: 600;
-  font-size: 60px;
 }
 
 .content {
   max-width: 800px;
-  margin: 130px 0 0 150px;
+  margin: 5.5vw 0 0 8vw;
+
+  @include respond(tab-land) {
+    margin: -130px 0 0 0;
+  }
 }
 
 .content-paragraph {
