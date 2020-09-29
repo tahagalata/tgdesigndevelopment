@@ -6,6 +6,7 @@ class MyWork extends Component {
   render() {
     return (
       <section className='mywork section' id='mywork'>
+        <h1>My Work</h1>
         <Work 
         spec='Latest Work' 
         title='Team App Website'
