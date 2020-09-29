@@ -4,12 +4,16 @@
   display: flex;
   justify-content: space-between;
   margin-right: 4.26vw;
-  margin-bottom: 150px;
+  margin-bottom: 75px;
   align-items: center;
 
   @include respond(tab-land) {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 50px;
   }
 }
 
