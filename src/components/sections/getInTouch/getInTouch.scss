@@ -26,11 +26,11 @@
   z-index: -1;
 
   @include respond(tab-land) {
-    opacity: 35%;
+    opacity: 0.35;
   }
 
   @include respond(phone) {
-    opacity: 20%;
+    opacity: 0.2;
   }
 }
 
