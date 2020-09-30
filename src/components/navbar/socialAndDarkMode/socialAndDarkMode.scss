@@ -16,6 +16,10 @@
   @include respond(tab-port) {
     flex-direction: row;
   }
+
+  @media (max-height: 610px) {
+    flex-direction: row;
+  }
 }
 
 .social , .darkmode-button {
@@ -25,5 +29,9 @@
   @include respond(tab-port) {
     padding: 10px;
     margin-right: 5px;
+  }
+
+  @media (max-height: 610px) {
+    margin-right: 10px;
   }
 }
