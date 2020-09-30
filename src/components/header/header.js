@@ -8,7 +8,8 @@ export default class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      navbarVisible: false
+      navbarVisible: false,
+      isSmallScreen: false
     }
   }
 
@@ -17,7 +18,9 @@ export default class Header extends Component {
   }
 
   handleScreenSize = () => {
-    this.setState(window.innerWidth > 900 ? {navbarVisible: true} : {navbarVisible:false})
+    this.setState(window.innerWidth > 900 ? 
+      {navbarVisible: true, isSmallScreen: false} : 
+      {navbarVisible:false, isSmallScreen: true})
   }
 
   componentDidMount() {
@@ -40,7 +43,11 @@ export default class Header extends Component {
           </button>
         </div>
         
-        {this.state.navbarVisible && <Navbar activeSection={this.props.activeSection}/>}
+        {this.state.navbarVisible && 
+        <Navbar activeSection={this.props.activeSection} 
+        isSmallScreen={this.state.isSmallScreen}
+        visibilityToggle={this.visibilityToggle}
+        />}
 
       </header>
     )

@@ -6,13 +6,22 @@ import BrandLogo from '../brandLogo/brandLogo';
 
 export default function Navbar(props) {
   return (
-    <nav className='navbar'>
-      
-      <BrandLogo screen='big'/>
+    <>
+      <nav className='navbar'>
+        
+        <BrandLogo screen='big'/>
 
-      <NavbarLinks activeSection={props.activeSection}/>
-      <SocialAndDarkMode/>
-      
-    </nav>
+        <NavbarLinks activeSection={props.activeSection}/>
+        <SocialAndDarkMode/>
+        
+      </nav>
+
+      {props.isSmallScreen && 
+      <div className='overlay' 
+      onClick={props.visibilityToggle}
+      onKeyDown={props.visibilityToggle}
+      aria-hidden='true'
+      />}
+    </>
   )
 }
