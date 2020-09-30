@@ -1,22 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './navbar.scss';
 import NavbarLinks from './navbarLinks/navbarLinks';
 import SocialAndDarkMode from './socialAndDarkMode/socialAndDarkMode';
 import BrandLogo from '../brandLogo/brandLogo';
 
-class Navbar extends Component {
-  render() {
-    return (
-      <nav className='navbar'>
-        
-        <BrandLogo screen='big'/>
+export default function Navbar(props) {
+  return (
+    <nav className='navbar'>
+      
+      <BrandLogo screen='big'/>
 
-        <NavbarLinks activeSection={this.props.activeSection}/>
-        <SocialAndDarkMode/>
-        
-      </nav>
-    )
-  }
+      <NavbarLinks activeSection={props.activeSection}/>
+      <SocialAndDarkMode/>
+      
+    </nav>
+  )
 }
-
-export default Navbar;
