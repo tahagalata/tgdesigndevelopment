@@ -13,8 +13,15 @@
 
   @include respond(tab-port) {
     z-index: 5;
-    width: calc(100vw - 60px);
+    margin-left: 30px;
+    width: calc(100vw - 110px);
     height: auto;
     top: 80px;
   }
+
+  @include respond(phone-xs) {
+    margin-left: 0;
+    width: calc(100vw - 60px);
+  }
+
 }
