@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   display: none;
-  margin: 0 30px;
+  margin: 0 20px 0 30px;
 
   @include respond(tab-port) {
     display: flex;
