@@ -4,7 +4,7 @@ import Tag from './tag/tag';
 import Button from '../../../button/button';
 
 export default function Work(props) {
-  const {reverse, spec, title, tags, children, picName} = props
+  const {reverse, spec, title, tags, children, picName, liveSiteUrl} = props
   
   return (
     <div className= {reverse ? 'work reverse': 'work'}>
