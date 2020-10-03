@@ -5,7 +5,11 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Taha Galata`,
+    description: `Personal Portfolio Website for my Design and Development Work`,
+  },
+
   plugins: [
     `gatsby-plugin-sass`,
     {
