@@ -34,7 +34,7 @@ export default class Home extends Component {
         <Helmet>
           <title>Taha Galata</title>
           <meta charSet="utf-8" />
-          <html lang={lang || 'en'} />
+          <html lang='en' />
           <meta name='description' content='Personal Portfolio Website'/>
           <meta name='author' content='Taha Galata' />
         </Helmet>
