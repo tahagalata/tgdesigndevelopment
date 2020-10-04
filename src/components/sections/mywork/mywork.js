@@ -28,7 +28,6 @@ export default function MyWork() {
       {works.map(work => {
         const {spec, title, tags, description, picName, liveSiteUrl} = work.node
         const reverse = works.indexOf(work) % 2 === 0 ? false : true
-        console.log(spec, title, tags, description, picName)
 
         return (
           <Work
@@ -38,6 +37,7 @@ export default function MyWork() {
             picName={picName}
             liveSiteUrl={liveSiteUrl}
             reverse= {reverse}
+            key={picName}
           >
             {description}
           </Work>

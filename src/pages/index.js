@@ -1,5 +1,6 @@
-import React, { Component, Fragment } from "react"
+import React, { Component } from "react"
 import VisibilitySensor from 'react-visibility-sensor';
+import Helmet from 'react-helmet'
 import '../main.scss'
 import Header from '../components/header/header'
 import Hero from '../components/sections/hero/hero'
@@ -29,8 +30,14 @@ export default class Home extends Component {
     }
 
     return (
-      <Fragment>
+      <>
+        <Helmet>
+          <title>Taha Galata</title>
+          
+        </Helmet>
+
         <Header activeSection={this.state.visibleSection}/>
+
         <VisibilitySensor
         onChange={(isVisible) => this.onSectionChange(isVisible,'hero')}
         partialVisibility= {true}
@@ -63,7 +70,7 @@ export default class Home extends Component {
           <GetInTouch/>
         </VisibilitySensor>
         
-      </Fragment>
+      </>
     )
   }
 }
