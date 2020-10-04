@@ -17,7 +17,7 @@ export default function Work(props) {
         <p className='work-paragraph'>
           {children}
         </p>
-        <Button>See This Project</Button>
+        <Button liveSiteUrl= {liveSiteUrl}>View Live Site</Button>
       </div>
       <div className={reverse? 'reverse-photo' : 'photo'} >
         <img 

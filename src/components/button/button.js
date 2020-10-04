@@ -2,9 +2,8 @@ import React from 'react';
 import {Link} from 'gatsby';
 import './button.scss'
 
-export default function CustomButton(props) {
+export default function CustomButton({children, liveSiteUrl}) {
   let button;
-  const {children} = props
 
   if (children === 'Get in Touch') {
     button = <a className='button primary' href='mailto: taha9alata@gmail.com' target='_blank' rel='noreferrer'>
@@ -18,10 +17,10 @@ export default function CustomButton(props) {
     </Link>
   }
 
-  else if (children === 'See This Project') {
-    button = <Link className='button primary' to='/work'>
+  else if (children === 'View Live Site') {
+    button = <a className='button primary' href={liveSiteUrl} target='_blank' rel='noreferrer'>
     {children}
-    </Link>
+    </a>
   }
 
   return (
