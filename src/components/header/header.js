@@ -33,20 +33,23 @@ export default class Header extends Component {
   }
 
   render() {
+    const {navbarVisible, isSmallScreen} = this.state
+
     return (
       <header>
         <div className='top-menu'>
           <BrandLogo screen='small'/>
-          <button className={this.state.navbarVisible && this.state.isSmallScreen? 'opened menu-button' : 'menu-button'}
+          <button className={navbarVisible && isSmallScreen?
+          'opened menu-button' : 'menu-button'}
           onClick={this.visibilityToggle}>
             <HamburgerMenuIcon />
           </button>
         </div>
         
         <Navbar activeSection={this.props.activeSection} 
-        isSmallScreen={this.state.isSmallScreen}
+        isSmallScreen={isSmallScreen}
         visibilityToggle={this.visibilityToggle}
-        isOpen= {this.state.navbarVisible}
+        isOpen={navbarVisible}
         />
 
       </header>

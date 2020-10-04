@@ -11,11 +11,13 @@ class Navbar extends Component {
   }
 
   render() {
-    console.log(this.props.isOpen)
+    const {isOpen, isSmallScreen, activeSection} = this.props
+
     return (
-      <nav className={this.props.isOpen && this.props.isSmallScreen ? 'navbar smallNavbar' : 'navbar'}>
+      <nav className={isOpen && isSmallScreen ? 
+      'navbar smallNavbar' : 'navbar'}>
         <BrandLogo screen='big'/>
-        <NavbarLinks activeSection={this.props.activeSection}/>
+        <NavbarLinks activeSection={activeSection}/>
         <SocialAndDarkMode/>
       </nav>
     )
@@ -29,12 +31,12 @@ class Container extends Component {
   render(evt) {
     const {activeSection, isSmallScreen, visibilityToggle, isOpen} = this.props
     return <EnhancedNavbar
+      isOpen={isOpen}
       activeSection = {activeSection}
       isSmallScreen = {isSmallScreen}
       visibilityToggle = {visibilityToggle}
-      disableOnClickOutside={!isSmallScreen}
+      disableOnClickOutside={!isSmallScreen || !isOpen}
       outsideClickIgnoreClass={'menu-button'}
-      isOpen={isOpen}
     />
   }
 }
