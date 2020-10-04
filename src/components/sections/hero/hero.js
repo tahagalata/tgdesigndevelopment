@@ -10,7 +10,7 @@ export default function Hero() {
       <div className='hero-content'>
         <h1>Hello</h1>
         <h1>I'm Taha Galata</h1>
-        <p className='hero-paragraph'>I am a web designer and web developer based in Çanakkale / Turkey. <span>
+        <p className='hero-paragraph'>I am a web designer and web developer based in Istanbul / Turkey. <span>
           <a href='mailto: taha9alata@gmail.com' 
               target='_blank' 
               rel='noreferrer'
