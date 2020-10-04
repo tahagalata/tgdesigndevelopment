@@ -16,12 +16,21 @@
     z-index: 5;
     margin-left: 15px;
     width: calc(100vw - 80px);
-    height: auto;
     top: 80px;
+    height: auto;
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
   }
 
   @include respond(phone-xs) {
     margin-left: 0;
     width: calc(100vw - 60px);
   }
+}
+
+
+.smallNavbar {
+  max-height: 350px;
+  transition: max-height 0.2s ease-in;
 }

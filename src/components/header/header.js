@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './header.scss';
 import Navbar from '../navbar/navbar';
-import HamburgerMenuIcon from './hamburger.svg';
+import HamburgerMenuIcon from './hamburger';
 import BrandLogo from '../brandLogo/brandLogo';
 
 export default class Header extends Component {
@@ -37,17 +37,17 @@ export default class Header extends Component {
       <header>
         <div className='top-menu'>
           <BrandLogo screen='small'/>
-          <button className='menu-button'
+          <button className={this.state.navbarVisible && this.state.isSmallScreen? 'opened menu-button' : 'menu-button'}
           onClick={this.visibilityToggle}>
-            <img src={HamburgerMenuIcon} alt='menu'></img>
+            <HamburgerMenuIcon />
           </button>
         </div>
         
-        {this.state.navbarVisible && 
         <Navbar activeSection={this.props.activeSection} 
         isSmallScreen={this.state.isSmallScreen}
         visibilityToggle={this.visibilityToggle}
-        />}
+        isOpen= {this.state.navbarVisible}
+        />
 
       </header>
     )
