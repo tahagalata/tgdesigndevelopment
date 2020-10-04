@@ -14,8 +14,8 @@
   @include respond(tab-port) {
     position: absolute;
     z-index: 5;
-    margin-left: 30px;
-    width: calc(100vw - 110px);
+    margin-left: 15px;
+    width: calc(100vw - 80px);
     height: auto;
     top: 80px;
   }
