@@ -24,21 +24,4 @@ class Navbar extends Component {
   }
 }
 
-//Handles outside clicks
-const EnhancedNavbar = onClickOutside(Navbar)
-
-class Container extends Component {
-  render(evt) {
-    const {activeSection, isSmallScreen, visibilityToggle, isOpen} = this.props
-    return <EnhancedNavbar
-      isOpen={isOpen}
-      activeSection = {activeSection}
-      isSmallScreen = {isSmallScreen}
-      visibilityToggle = {visibilityToggle}
-      disableOnClickOutside={!isSmallScreen || !isOpen}
-      outsideClickIgnoreClass={'menu-button'}
-    />
-  }
-}
-
-export default Container
+export default Navbar
