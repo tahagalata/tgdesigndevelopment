@@ -39,9 +39,11 @@ export default class Header extends Component {
       <header>
         <div className='top-menu'>
           <BrandLogo screen='small'/>
-          <button className={navbarVisible && isSmallScreen?
-          'opened menu-button' : 'menu-button'}
-          onClick={this.visibilityToggle}>
+          <button 
+            className={navbarVisible && isSmallScreen ? 'opened menu-button' : 'menu-button'}
+            onClick={this.visibilityToggle}
+            id='menu-button'
+          >
             <HamburgerMenuIcon />
           </button>
         </div>
