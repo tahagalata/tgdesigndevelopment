@@ -1,7 +1,7 @@
-import React from 'react';
-import './work.scss';
-import Tag from './tag/tag';
-import Button from '../../../button/button';
+import React from 'react'
+import './work.scss'
+import Tag from './tag/tag'
+import Button from '../../../button/button'
 
 export default function Work(props) {
   const {reverse, spec, title, tags, children, picName, liveSiteUrl} = props

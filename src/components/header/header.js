@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import './header.scss';
-import Navbar from '../navbar/navbar';
-import HamburgerMenuIcon from './hamburger';
-import BrandLogo from '../brandLogo/brandLogo';
+import React, { Component } from 'react'
+import './header.scss'
+import Navbar from '../navbar/navbar'
+import HamburgerMenuIcon from './hamburger'
+import BrandLogo from '../brandLogo/brandLogo'
 
 export default class Header extends Component {
   constructor(props) {

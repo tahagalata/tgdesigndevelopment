@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import './navbarLinks.scss'
-import {Link} from 'gatsby';
+import {Link} from 'gatsby'
 
 export default function NavbarLinks(props) {
   const section = props.activeSection;

@@ -1,6 +1,6 @@
-import React from 'react';
-import {Link} from 'gatsby';
-import './brandLogo.scss';
+import React from 'react'
+import {Link} from 'gatsby'
+import './brandLogo.scss'
 
 export default function BrandLogo(props) {
   let {screen} = props;

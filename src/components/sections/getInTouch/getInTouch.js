@@ -1,6 +1,6 @@
-import React from 'react';
-import './getInTouch.scss';
-import atsign from './@.svg';
+import React from 'react'
+import './getInTouch.scss'
+import atsign from './@.svg'
 import Button from '../../button/button'
 
 export default function GetInTouch() {

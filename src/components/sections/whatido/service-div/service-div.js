@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import './service-div.scss';
+import React, {Component} from 'react'
+import './service-div.scss'
 
 class ServiceDiv extends Component {
   render() {

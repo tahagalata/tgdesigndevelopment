@@ -1,6 +1,6 @@
-import React from 'react';
-import './whatido.scss';
-import ServiceDiv from './service-div/service-div';
+import React from 'react'
+import './whatido.scss'
+import ServiceDiv from './service-div/service-div'
 
 export default function WhatIDo() {
   return (

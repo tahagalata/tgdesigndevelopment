@@ -1,6 +1,6 @@
-import React from 'react';
-import './hero.scss';
-import Button from '../../button/button';
+import React from 'react'
+import './hero.scss'
+import Button from '../../button/button'
 import heroPhoto from './herophoto.png'
 
 export default function Hero() {

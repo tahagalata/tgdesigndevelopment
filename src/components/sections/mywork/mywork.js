@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import { graphql, useStaticQuery} from 'gatsby'
-import './mywork.scss';
+import './mywork.scss'
 import Work from './work/work'
 
 export default function MyWork() {

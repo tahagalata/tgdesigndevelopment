@@ -1,11 +1,8 @@
-import React from 'react';
-import './socialAndDarkMode.scss';
-import instagram from './assets/instagram.svg';
-// import facebook from './assets/facebook.svg';
-import linkedin from './assets/linkedin.svg';
-import github from './assets/github.svg';
-// import dribbble from './assets/dribbble.svg';
-// import darkmode from './assets/darkmode.svg';
+import React from 'react'
+import './socialAndDarkMode.scss'
+import instagram from './assets/instagram.svg'
+import linkedin from './assets/linkedin.svg'
+import github from './assets/github.svg'
 
 export default function socialAndDarkMode() {
   return (
