@@ -37,6 +37,11 @@ export default class Home extends Component {
           <html lang='en' />
           <meta name='description' content='Personal Portfolio Website'/>
           <meta name='author' content='Taha Galata' />
+
+          <meta property="og:title" content="Taha Galata" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://tahagalata.netlify.app/" />
+          <meta property="og:image" content="static/favicon.ico" />
         </Helmet>
 
         <Header activeSection={this.state.visibleSection}/>
