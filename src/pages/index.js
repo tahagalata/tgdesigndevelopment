@@ -41,7 +41,7 @@ export default class Home extends Component {
           <meta property="og:title" content="Taha Galata" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://tahagalata.netlify.app/" />
-          <meta property="og:image" content="static/favicon.ico" />
+          <meta property="og:image" content="static/tgIcon.png" />
         </Helmet>
 
         <Header activeSection={this.state.visibleSection}/>
