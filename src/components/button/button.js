@@ -6,21 +6,28 @@ export default function CustomButton({children, liveSiteUrl}) {
   let button;
 
   if (children === 'Get in Touch') {
-    button = <a className='button primary' href='mailto: taha9alata@gmail.com' target='_blank' rel='noreferrer'>
-    {children}
+    button = <a className='button primary' href='mailto: taha9alata@gmail.com' target='_blank' rel='noreferrer'
+    >
+      {children}
     </a>
   }
 
   else if (children === 'See My Work') {
     button = <Link className='button ghost' to='#mywork'>
-    {children}
+      {children}
     </Link>
   }
 
   else if (children === 'View Live Site') {
     button = <a className='button primary' href={liveSiteUrl} target='_blank' rel='noreferrer'>
-    {children}
+      {children}
     </a>
+  }
+
+  else if (children === 'Go Homepage') {
+    button = <Link className='button primary' to='/'>
+      {children}
+    </Link>
   }
 
   return (
